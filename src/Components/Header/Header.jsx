@@ -4,7 +4,7 @@ import logo from "../img/logo.jpg"
 function Header() {
   return (
     <>
-      <div className="bg-pink-600 h-18">
+      <div className="bg-white h-18">
       <nav>
         <div className="grid grid-cols-3 py-2">
         <span className="pl-5 flex flex-col-2">
