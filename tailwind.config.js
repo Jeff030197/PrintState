@@ -5,7 +5,11 @@ module.exports = {
     "./public/index.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'bg1': "url('/src/Components/img/Banner/banner1.png')",
+      }
+    },
   },
   plugins: [],
 }
