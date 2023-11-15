@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Tshirt from '../img/Banner/Tshirt.png'; 
+import ShopAndOrder from './ShopAndOrder';
 
 const MainBody = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const MainBody = () => {
   }, []);
 
   return (
+    <>
     <div className='bg-bg1 opacity-0 transition-opacity duration-500'>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 px-4 md:px-8 lg:px-16 py-8 md:py-12">
         <div className='md:py-0 flex flex-col justify-center'>
@@ -54,6 +56,8 @@ const MainBody = () => {
         </div>
       </div>
     </div>
+    <ShopAndOrder/>
+    </>
   );
 };
 
