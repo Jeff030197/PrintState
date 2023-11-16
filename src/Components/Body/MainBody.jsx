@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Tshirt from '../img/Banner/Tshirt.png'; 
 import ShopAndOrder from './ShopAndOrder';
+import WhyChooseUs from './WhyChooseUs';
 
 const MainBody = () => {
   useEffect(() => {
@@ -57,6 +58,7 @@ const MainBody = () => {
       </div>
     </div>
     <ShopAndOrder/>
+    <WhyChooseUs/>
     </>
   );
 };
