@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 const About = () => {
     return (
         <>
-            <Header/>
+            <h1>This is about page</h1>
         </>
     )
 };
