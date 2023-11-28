@@ -12,11 +12,13 @@ function Header() {
   return (
     <>
       <div>
-        <nav className="p-2 bg-pink-500 shadow md:flex md:items-center md:justify-between">
+        <nav className="p-2 bg-white shadow md:flex md:items-center md:justify-between">
           <div className="flex justify-between items-center">
-            <span className="text-4xl font-[Poppins] cursor-pointer font-semibold ">
-              <img className="h-14 inline rounded-md" src={logo} alt="logo" />
+            <span className="text-4xl font-[Poppins] cursor-pointer font-semibold lg:pl-10">
+              <img className="h-12 inline rounded-md" src={logo} alt="logo" />
+              <span className="lg:pl-3">
               print<span className="text-pink-500">State</span>
+              </span>
             </span>
 
             {menuOpen ? (
@@ -63,18 +65,22 @@ function Header() {
             </li>
           </ul>
 
-          <div className="md:flex md:gap-5 md:items-center md:static w-full md:w-auto md:py-0 py-4 md:pl-0">
+          <div className="md:flex md:items-center md:static w-full md:w-auto md:py-0 py-4 md:pl-0">
             <Link to="/">
-              <ion-icon name="cart-outline" className="md:w-20 md:h-20"></ion-icon>
+              <span>
+              <ion-icon name="cart-outline" className="h-32 w-32"></ion-icon>
+              </span>
             </Link>
+            
 
-            <button className="mx-4 px-4 py-2 bg-pink-400 rounded-md hover:bg-white border-2 border-pink-400">
+            <button className="mx-4 px-4 py-1 bg-pink-400 rounded-md hover:bg-white border-2 border-pink-400 shadow-md shadow-black/70">
               Login
             </button>
-            <button className="px-4 py-2 bg-black rounded-md hover:bg-white border-2 border-black hover:text-black text-white">
+            <button className="px-4 py-1 bg-black rounded-md hover:bg-white border-2 border-black hover:text-black text-white shadow-md shadow-black/70">
               Signup
             </button>
           </div>
+
         </nav>
       </div>
     </>
